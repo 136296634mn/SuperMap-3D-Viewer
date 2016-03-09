@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		162C15931C9017130091FD5C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 162C15921C9017130091FD5C /* CoreLocation.framework */; };
+		162C15951C9017130091FD5C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 162C15941C9017130091FD5C /* UIKit.framework */; };
+		162C15971C9017130091FD5C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 162C15961C9017130091FD5C /* QuartzCore.framework */; };
+		162C15991C9017130091FD5C /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 162C15981C9017130091FD5C /* OpenGLES.framework */; };
+		162C159B1C9017130091FD5C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 162C159A1C9017130091FD5C /* CoreGraphics.framework */; };
+		162C159D1C9017130091FD5C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 162C159C1C9017130091FD5C /* Security.framework */; };
+		162C159F1C9017130091FD5C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 162C159E1C9017130091FD5C /* AudioToolbox.framework */; };
+		162C15A11C9017130091FD5C /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 162C15A01C9017130091FD5C /* CoreText.framework */; };
+		162C15A31C9017130091FD5C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 162C15A21C9017130091FD5C /* AVFoundation.framework */; };
+		162C15A51C9017130091FD5C /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 162C15A41C9017130091FD5C /* MediaPlayer.framework */; };
+		162C15A71C9017130091FD5C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 162C15A61C9017130091FD5C /* MobileCoreServices.framework */; };
+		162C15A91C9017130091FD5C /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 162C15A81C9017130091FD5C /* AddressBook.framework */; };
+		162C15AB1C9017130091FD5C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 162C15AA1C9017130091FD5C /* SystemConfiguration.framework */; };
+		162C15AD1C9017130091FD5C /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 162C15AC1C9017130091FD5C /* CoreTelephony.framework */; };
+		162C15B01C9017140091FD5C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 162C15AF1C9017140091FD5C /* Info.plist */; };
+		162C15B31C9017140091FD5C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 162C15B21C9017140091FD5C /* main.m */; };
+		162C15B61C9017140091FD5C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 162C15B51C9017140091FD5C /* AppDelegate.m */; };
+		162C15B91C9017140091FD5C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 162C15B81C9017140091FD5C /* ViewController.m */; };
+		162C15BB1C9017180091FD5C /* SuperMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 162C15BA1C9017180091FD5C /* SuperMap.bundle */; };
+		162C15BE1C9017180091FD5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 162C15BC1C9017180091FD5C /* Main.storyboard */; };
+		162C15C01C9017180091FD5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 162C15BF1C9017180091FD5C /* Assets.xcassets */; };
+		162C15C31C9017180091FD5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 162C15C11C9017180091FD5C /* LaunchScreen.storyboard */; };
+		162C15CD1C9017180091FD5C /* SuperMap_3D_ViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 162C15CC1C9017180091FD5C /* SuperMap_3D_ViewerTests.m */; };
+		162C15D81C9017180091FD5C /* SuperMap_3D_ViewerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 162C15D71C9017180091FD5C /* SuperMap_3D_ViewerUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		162C15C91C9017180091FD5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 162C15871C9017130091FD5C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 162C158E1C9017130091FD5C;
+			remoteInfo = "SuperMap 3D Viewer";
+		};
+		162C15D41C9017180091FD5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 162C15871C9017130091FD5C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 162C158E1C9017130091FD5C;
+			remoteInfo = "SuperMap 3D Viewer";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		162C158F1C9017130091FD5C /* SuperMap 3D Viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SuperMap 3D Viewer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		162C15921C9017130091FD5C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		162C15941C9017130091FD5C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		162C15961C9017130091FD5C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		162C15981C9017130091FD5C /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		162C159A1C9017130091FD5C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		162C159C1C9017130091FD5C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		162C159E1C9017130091FD5C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		162C15A01C9017130091FD5C /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		162C15A21C9017130091FD5C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		162C15A41C9017130091FD5C /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		162C15A61C9017130091FD5C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		162C15A81C9017130091FD5C /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		162C15AA1C9017130091FD5C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		162C15AC1C9017130091FD5C /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		162C15AF1C9017140091FD5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		162C15B21C9017140091FD5C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		162C15B41C9017140091FD5C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		162C15B51C9017140091FD5C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		162C15B71C9017140091FD5C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		162C15B81C9017140091FD5C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		162C15BA1C9017180091FD5C /* SuperMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SuperMap.bundle; sourceTree = "<group>"; };
+		162C15BD1C9017180091FD5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		162C15BF1C9017180091FD5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		162C15C21C9017180091FD5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		162C15C81C9017180091FD5C /* SuperMap 3D ViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SuperMap 3D ViewerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		162C15CC1C9017180091FD5C /* SuperMap_3D_ViewerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperMap_3D_ViewerTests.m; sourceTree = "<group>"; };
+		162C15CE1C9017180091FD5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		162C15D31C9017180091FD5C /* SuperMap 3D ViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SuperMap 3D ViewerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		162C15D71C9017180091FD5C /* SuperMap_3D_ViewerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperMap_3D_ViewerUITests.m; sourceTree = "<group>"; };
+		162C15D91C9017180091FD5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		162C158C1C9017130091FD5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				162C15931C9017130091FD5C /* CoreLocation.framework in Frameworks */,
+				162C15951C9017130091FD5C /* UIKit.framework in Frameworks */,
+				162C15AD1C9017130091FD5C /* CoreTelephony.framework in Frameworks */,
+				162C15A31C9017130091FD5C /* AVFoundation.framework in Frameworks */,
+				162C15971C9017130091FD5C /* QuartzCore.framework in Frameworks */,
+				162C159B1C9017130091FD5C /* CoreGraphics.framework in Frameworks */,
+				162C15AB1C9017130091FD5C /* SystemConfiguration.framework in Frameworks */,
+				162C15A11C9017130091FD5C /* CoreText.framework in Frameworks */,
+				162C15A91C9017130091FD5C /* AddressBook.framework in Frameworks */,
+				162C15A51C9017130091FD5C /* MediaPlayer.framework in Frameworks */,
+				162C159F1C9017130091FD5C /* AudioToolbox.framework in Frameworks */,
+				162C159D1C9017130091FD5C /* Security.framework in Frameworks */,
+				162C15A71C9017130091FD5C /* MobileCoreServices.framework in Frameworks */,
+				162C15991C9017130091FD5C /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		162C15C51C9017180091FD5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		162C15D01C9017180091FD5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		162C15861C9017130091FD5C = {
+			isa = PBXGroup;
+			children = (
+				162C15AE1C9017130091FD5C /* SuperMap 3D Viewer */,
+				162C15CB1C9017180091FD5C /* SuperMap 3D ViewerTests */,
+				162C15D61C9017180091FD5C /* SuperMap 3D ViewerUITests */,
+				162C15911C9017130091FD5C /* Frameworks */,
+				162C15901C9017130091FD5C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		162C15901C9017130091FD5C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				162C158F1C9017130091FD5C /* SuperMap 3D Viewer.app */,
+				162C15C81C9017180091FD5C /* SuperMap 3D ViewerTests.xctest */,
+				162C15D31C9017180091FD5C /* SuperMap 3D ViewerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		162C15911C9017130091FD5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				162C15921C9017130091FD5C /* CoreLocation.framework */,
+				162C15941C9017130091FD5C /* UIKit.framework */,
+				162C15961C9017130091FD5C /* QuartzCore.framework */,
+				162C15981C9017130091FD5C /* OpenGLES.framework */,
+				162C159A1C9017130091FD5C /* CoreGraphics.framework */,
+				162C159C1C9017130091FD5C /* Security.framework */,
+				162C159E1C9017130091FD5C /* AudioToolbox.framework */,
+				162C15A01C9017130091FD5C /* CoreText.framework */,
+				162C15A21C9017130091FD5C /* AVFoundation.framework */,
+				162C15A41C9017130091FD5C /* MediaPlayer.framework */,
+				162C15A61C9017130091FD5C /* MobileCoreServices.framework */,
+				162C15A81C9017130091FD5C /* AddressBook.framework */,
+				162C15AA1C9017130091FD5C /* SystemConfiguration.framework */,
+				162C15AC1C9017130091FD5C /* CoreTelephony.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		162C15AE1C9017130091FD5C /* SuperMap 3D Viewer */ = {
+			isa = PBXGroup;
+			children = (
+				162C15AF1C9017140091FD5C /* Info.plist */,
+				162C15B41C9017140091FD5C /* AppDelegate.h */,
+				162C15B51C9017140091FD5C /* AppDelegate.m */,
+				162C15B71C9017140091FD5C /* ViewController.h */,
+				162C15B81C9017140091FD5C /* ViewController.m */,
+				162C15BA1C9017180091FD5C /* SuperMap.bundle */,
+				162C15BC1C9017180091FD5C /* Main.storyboard */,
+				162C15BF1C9017180091FD5C /* Assets.xcassets */,
+				162C15C11C9017180091FD5C /* LaunchScreen.storyboard */,
+				162C15B11C9017140091FD5C /* Supporting Files */,
+			);
+			path = "SuperMap 3D Viewer";
+			sourceTree = "<group>";
+		};
+		162C15B11C9017140091FD5C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				162C15B21C9017140091FD5C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		162C15CB1C9017180091FD5C /* SuperMap 3D ViewerTests */ = {
+			isa = PBXGroup;
+			children = (
+				162C15CC1C9017180091FD5C /* SuperMap_3D_ViewerTests.m */,
+				162C15CE1C9017180091FD5C /* Info.plist */,
+			);
+			path = "SuperMap 3D ViewerTests";
+			sourceTree = "<group>";
+		};
+		162C15D61C9017180091FD5C /* SuperMap 3D ViewerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				162C15D71C9017180091FD5C /* SuperMap_3D_ViewerUITests.m */,
+				162C15D91C9017180091FD5C /* Info.plist */,
+			);
+			path = "SuperMap 3D ViewerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		162C158E1C9017130091FD5C /* SuperMap 3D Viewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 162C15DC1C9017180091FD5C /* Build configuration list for PBXNativeTarget "SuperMap 3D Viewer" */;
+			buildPhases = (
+				162C158B1C9017130091FD5C /* Sources */,
+				162C158C1C9017130091FD5C /* Frameworks */,
+				162C158D1C9017130091FD5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SuperMap 3D Viewer";
+			productName = "SuperMap 3D Viewer";
+			productReference = 162C158F1C9017130091FD5C /* SuperMap 3D Viewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		162C15C71C9017180091FD5C /* SuperMap 3D ViewerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 162C15DF1C9017180091FD5C /* Build configuration list for PBXNativeTarget "SuperMap 3D ViewerTests" */;
+			buildPhases = (
+				162C15C41C9017180091FD5C /* Sources */,
+				162C15C51C9017180091FD5C /* Frameworks */,
+				162C15C61C9017180091FD5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				162C15CA1C9017180091FD5C /* PBXTargetDependency */,
+			);
+			name = "SuperMap 3D ViewerTests";
+			productName = "SuperMap 3D ViewerTests";
+			productReference = 162C15C81C9017180091FD5C /* SuperMap 3D ViewerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		162C15D21C9017180091FD5C /* SuperMap 3D ViewerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 162C15E21C9017180091FD5C /* Build configuration list for PBXNativeTarget "SuperMap 3D ViewerUITests" */;
+			buildPhases = (
+				162C15CF1C9017180091FD5C /* Sources */,
+				162C15D01C9017180091FD5C /* Frameworks */,
+				162C15D11C9017180091FD5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				162C15D51C9017180091FD5C /* PBXTargetDependency */,
+			);
+			name = "SuperMap 3D ViewerUITests";
+			productName = "SuperMap 3D ViewerUITests";
+			productReference = 162C15D31C9017180091FD5C /* SuperMap 3D ViewerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		162C15871C9017130091FD5C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = zyd;
+				TargetAttributes = {
+					162C158E1C9017130091FD5C = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					162C15C71C9017180091FD5C = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 162C158E1C9017130091FD5C;
+					};
+					162C15D21C9017180091FD5C = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 162C158E1C9017130091FD5C;
+					};
+				};
+			};
+			buildConfigurationList = 162C158A1C9017130091FD5C /* Build configuration list for PBXProject "SuperMap 3D Viewer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 162C15861C9017130091FD5C;
+			productRefGroup = 162C15901C9017130091FD5C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				162C158E1C9017130091FD5C /* SuperMap 3D Viewer */,
+				162C15C71C9017180091FD5C /* SuperMap 3D ViewerTests */,
+				162C15D21C9017180091FD5C /* SuperMap 3D ViewerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		162C158D1C9017130091FD5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				162C15BE1C9017180091FD5C /* Main.storyboard in Resources */,
+				162C15BB1C9017180091FD5C /* SuperMap.bundle in Resources */,
+				162C15C01C9017180091FD5C /* Assets.xcassets in Resources */,
+				162C15C31C9017180091FD5C /* LaunchScreen.storyboard in Resources */,
+				162C15B01C9017140091FD5C /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		162C15C61C9017180091FD5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		162C15D11C9017180091FD5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		162C158B1C9017130091FD5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				162C15B91C9017140091FD5C /* ViewController.m in Sources */,
+				162C15B61C9017140091FD5C /* AppDelegate.m in Sources */,
+				162C15B31C9017140091FD5C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		162C15C41C9017180091FD5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				162C15CD1C9017180091FD5C /* SuperMap_3D_ViewerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		162C15CF1C9017180091FD5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				162C15D81C9017180091FD5C /* SuperMap_3D_ViewerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		162C15CA1C9017180091FD5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 162C158E1C9017130091FD5C /* SuperMap 3D Viewer */;
+			targetProxy = 162C15C91C9017180091FD5C /* PBXContainerItemProxy */;
+		};
+		162C15D51C9017180091FD5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 162C158E1C9017130091FD5C /* SuperMap 3D Viewer */;
+			targetProxy = 162C15D41C9017180091FD5C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		162C15BC1C9017180091FD5C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				162C15BD1C9017180091FD5C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		162C15C11C9017180091FD5C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				162C15C21C9017180091FD5C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		162C15DA1C9017180091FD5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]" = "\"$(LOCAL_LIBRARY_DIR)/SuperMap/SDKs/iPhoneOS.sdk\"";
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphonesimulator*]" = "\"$(LOCAL_LIBRARY_DIR)/SuperMap/SDKs/iPhoneSimulator.sdk\"";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Debug;
+		};
+		162C15DB1C9017180091FD5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]" = "\"$(LOCAL_LIBRARY_DIR)/SuperMap/SDKs/iPhoneOS.sdk\"";
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphonesimulator*]" = "\"$(LOCAL_LIBRARY_DIR)/SuperMap/SDKs/iPhoneSimulator.sdk\"";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = "{\n    Debug = NO;\n    Release = NO;\n}";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Release;
+		};
+		162C15DD1C9017180091FD5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "SuperMap 3D Viewer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					SuperMap,
+					"-lstdc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "zyd.SuperMap-3D-Viewer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		162C15DE1C9017180091FD5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "SuperMap 3D Viewer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					SuperMap,
+					"-lstdc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "zyd.SuperMap-3D-Viewer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		162C15E01C9017180091FD5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LIBRARY = "libc++";
+				INFOPLIST_FILE = "SuperMap 3D ViewerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "zyd.SuperMap-3D-ViewerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SuperMap 3D Viewer.app/SuperMap 3D Viewer";
+			};
+			name = Debug;
+		};
+		162C15E11C9017180091FD5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LIBRARY = "libc++";
+				INFOPLIST_FILE = "SuperMap 3D ViewerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "zyd.SuperMap-3D-ViewerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SuperMap 3D Viewer.app/SuperMap 3D Viewer";
+			};
+			name = Release;
+		};
+		162C15E31C9017180091FD5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				INFOPLIST_FILE = "SuperMap 3D ViewerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "zyd.SuperMap-3D-ViewerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "SuperMap 3D Viewer";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		162C15E41C9017180091FD5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				INFOPLIST_FILE = "SuperMap 3D ViewerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "zyd.SuperMap-3D-ViewerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "SuperMap 3D Viewer";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		162C158A1C9017130091FD5C /* Build configuration list for PBXProject "SuperMap 3D Viewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				162C15DA1C9017180091FD5C /* Debug */,
+				162C15DB1C9017180091FD5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		162C15DC1C9017180091FD5C /* Build configuration list for PBXNativeTarget "SuperMap 3D Viewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				162C15DD1C9017180091FD5C /* Debug */,
+				162C15DE1C9017180091FD5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		162C15DF1C9017180091FD5C /* Build configuration list for PBXNativeTarget "SuperMap 3D ViewerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				162C15E01C9017180091FD5C /* Debug */,
+				162C15E11C9017180091FD5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		162C15E21C9017180091FD5C /* Build configuration list for PBXNativeTarget "SuperMap 3D ViewerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				162C15E31C9017180091FD5C /* Debug */,
+				162C15E41C9017180091FD5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 162C15871C9017130091FD5C /* Project object */;
+}
