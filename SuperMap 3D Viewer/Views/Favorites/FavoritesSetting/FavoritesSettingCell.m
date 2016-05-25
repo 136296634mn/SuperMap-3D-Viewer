@@ -7,17 +7,38 @@
 //
 
 #import "FavoritesSettingCell.h"
+#import "FavoritesSettingModel.h"
 
 @implementation FavoritesSettingCell
 
 - (void)awakeFromNib {
+    [super awakeFromNib];
     // Initialization code
+    [self initialize];
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
+    self = [super initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:reuseIdentifier];
+    if (!self) return nil;
+    
+    [self initialize];
+    
+    return self;
+}
 
-    // Configure the view for the selected state
+- (void)initialize {
+    self.textLabel.font = [UIFont boldSystemFontOfSize:16];
+    self.detailTextLabel.font = [UIFont systemFontOfSize:15];
+}
+
+- (void)refreshCellWithModel:(FavoritesSettingModel *)model indexPath:(NSIndexPath *)indexPath {
+    if (indexPath.row == 0) {
+        self.textLabel.text = @"名称";
+        self.detailTextLabel.text = model.name;
+    } else if (indexPath.row == 3) {
+        self.textLabel.text = @"描述信息";
+        self.detailTextLabel.text = model.message;
+    }
 }
 
 @end

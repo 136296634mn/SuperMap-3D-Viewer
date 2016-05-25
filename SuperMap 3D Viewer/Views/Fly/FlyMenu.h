@@ -10,4 +10,6 @@
 
 @interface FlyMenu : UIView
 
+- (void)reloadData:(id)data;
+
 @end

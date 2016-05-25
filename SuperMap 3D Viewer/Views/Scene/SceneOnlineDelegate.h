@@ -7,7 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface SceneOnlineDelegate : NSObject
+@interface SceneOnlineDelegate : NSObject <UITableViewDelegate>
+
+- (instancetype)initWithItems:(id)items;
++ (SceneOnlineDelegate *)delegateWithItems:(id)items;
+- (void)refreshData:(id)data;
 
 @end

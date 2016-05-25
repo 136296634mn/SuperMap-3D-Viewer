@@ -10,4 +10,6 @@
 
 @interface SearchViewController : UIViewController
 
+@property (copy, nonatomic) void (^deliverData)(NSArray *items);
+
 @end

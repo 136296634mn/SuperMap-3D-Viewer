@@ -10,4 +10,7 @@
 
 @interface NavigationItem : UIView
 
+@property (copy, nonatomic) NSString *title;
+@property (copy, nonatomic) void (^popToPreviousViewController)();
+
 @end

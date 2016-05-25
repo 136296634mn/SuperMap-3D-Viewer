@@ -7,18 +7,34 @@
 //
 
 #import "DistanceCell.h"
+#import "Bridge.h"
+
+@interface DistanceCell ()
+
+@property (weak, nonatomic) IBOutlet UIButton *home;
+@property (weak, nonatomic) IBOutlet UIButton *clearButton;
+
+@end
 
 @implementation DistanceCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+    
+    self.backgroundColor = [UIColor clearColor];
+    [self.home setImage:[UIImage imageNamed:@"icon_主菜单.png"] forState:UIControlStateNormal];
+    [self.home setImage:[UIImage imageNamed:@"icon_主菜单－按下.png"] forState:UIControlStateHighlighted];
+    [self.clearButton setImageEdgeInsets:UIEdgeInsetsMake(8, 8, 8, 8)];
+    [self.clearButton setImage:[UIImage imageNamed:@"delete@2x.png"] forState:UIControlStateNormal];
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
+- (IBAction)handleHomeButtonEvent:(id)sender {
+    [Bridge sharedInstance].handleHomeButtonEvent();
+}
 
-    // Configure the view for the selected state
+- (IBAction)handleClearButtonEvent:(id)sender {
+    [Bridge sharedInstance].clearAnalyzeResult();
 }
 
 @end

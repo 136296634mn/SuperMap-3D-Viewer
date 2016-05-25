@@ -7,15 +7,17 @@
 //
 
 #import "SceneSegmentedControl.h"
+#import "Helper.h"
 
 @implementation SceneSegmentedControl
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (void)awakeFromNib {
+    NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:[UIColor lightTextColor],NSForegroundColorAttributeName,  [UIFont systemFontOfSize:16],NSFontAttributeName,nil];
+    [self setTitleTextAttributes:dic forState:UIControlStateNormal];
+    self.layer.cornerRadius = 10;
+    self.layer.masksToBounds = YES;
+    self.tintColor = GetColor(168, 168, 168, 1.0);
+    self.backgroundColor = GetColor(30, 30, 30, 1.0);
 }
-*/
 
 @end

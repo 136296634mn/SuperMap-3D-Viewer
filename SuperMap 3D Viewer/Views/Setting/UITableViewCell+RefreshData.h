@@ -10,4 +10,6 @@
 
 @interface UITableViewCell (RefreshData)
 
+- (void)refreshCell:(id)data;
+
 @end

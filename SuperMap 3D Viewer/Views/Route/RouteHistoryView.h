@@ -10,4 +10,10 @@
 
 @interface RouteHistoryView : UIView
 
+//  获取路径搜索历史数据源
+- (void)fetchHistoryDataSource;
+
+//  刷新表格
+- (void)refreshMenu;
+
 @end

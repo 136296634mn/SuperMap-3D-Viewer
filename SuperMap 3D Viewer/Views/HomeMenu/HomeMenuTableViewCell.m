@@ -8,8 +8,6 @@
 
 #import "HomeMenuTableViewCell.h"
 
-#define TITLELABEL_FONT_SIZE ((UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) ? 20 : 15)
-
 @interface HomeMenuTableViewCell ()
 
 @property (strong, nonatomic) IBOutlet UIImageView *titleImageView;
@@ -20,12 +18,9 @@
 @implementation HomeMenuTableViewCell
 
 - (void)refreshCellWithTitle:(NSString *)title andImageName:(NSString *)imageName {
-
-    NSString *imagePath = [[NSBundle mainBundle] pathForResource:imageName ofType:nil];
-    NSData *imageData = [[NSData alloc] initWithContentsOfFile:imagePath];
-    _titleImageView.image = [UIImage imageWithData:imageData];
+    _titleImageView.image = [UIImage imageNamed:imageName];
     _titleLabel.text = title;
-    _titleLabel.font = [UIFont systemFontOfSize:TITLELABEL_FONT_SIZE];
+    _titleLabel.textColor = [UIColor whiteColor];
 }
 
 - (void)awakeFromNib {

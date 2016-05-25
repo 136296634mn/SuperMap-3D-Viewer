@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+extern BOOL visibleSearchAndRouteButton;
+
 @interface HomeMenu : UIView
+
+- (void)adjustContentOffset;
 
 @end

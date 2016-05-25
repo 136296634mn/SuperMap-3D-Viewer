@@ -7,18 +7,33 @@
 //
 
 #import "AttributeCell.h"
+#import "UITableViewCell+RefreshData.h"
+#import "AttributeModel.h"
+
+@interface AttributeCell ()
+
+@property (weak, nonatomic) IBOutlet UILabel *keyLabel;
+@property (weak, nonatomic) IBOutlet UILabel *valueLabel;
+
+@end
 
 @implementation AttributeCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+    self.selectionStyle = UITableViewCellSelectionStyleNone;
+    self.backgroundColor = [UIColor clearColor];
+//    self.keyLabel.numberOfLines = 0;
+//    self.valueLabel.numberOfLines = 0;
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+- (void)refreshCell:(id)data {
+    if (![data isKindOfClass:[AttributeModel class]]) return;
+    
+    AttributeModel *model = (AttributeModel *)data;
+    self.keyLabel.text = [NSString stringWithFormat:@"%@", model.key];
+    self.valueLabel.text = [NSString stringWithFormat:@"%@", model.value];
 }
 
 @end

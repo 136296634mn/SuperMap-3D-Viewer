@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface ToolDelegate : NSObject
+@interface ToolDelegate : NSObject <UITableViewDelegate>
 
 @end

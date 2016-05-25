@@ -10,4 +10,6 @@
 
 @interface FavoritesSettingSwitchCell : UITableViewCell
 
+@property (copy, nonatomic) void (^showFavorite)(BOOL visible);
+
 @end

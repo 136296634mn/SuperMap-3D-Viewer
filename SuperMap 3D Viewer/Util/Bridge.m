@@ -10,4 +10,13 @@
 
 @implementation Bridge
 
++ (instancetype)sharedInstance {
+    static Bridge *singleton = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        singleton = [[super allocWithZone:NULL] init];
+    });
+    return singleton;
+}
+
 @end

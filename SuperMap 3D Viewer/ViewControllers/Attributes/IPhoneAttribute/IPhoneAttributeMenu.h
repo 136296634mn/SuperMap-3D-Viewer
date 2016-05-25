@@ -10,4 +10,9 @@
 
 @interface IPhoneAttributeMenu : UIWindow
 
+@property (copy, nonatomic) void (^resignEvent)();
+
++ (IPhoneAttributeMenu *)sharedInstance;
+- (void)showWithData:(id)data;
+
 @end

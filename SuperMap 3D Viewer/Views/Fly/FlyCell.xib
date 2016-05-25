@@ -1,18 +1,120 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="FlyCell">
-            <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="84" id="KGk-i7-Jjw" customClass="FlyCell">
+            <rect key="frame" x="0.0" y="0.0" width="451" height="84"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="768" height="43"/>
+                <rect key="frame" x="0.0" y="0.0" width="451" height="83.5"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pyg-EZ-P3m">
+                        <rect key="frame" x="0.0" y="0.0" width="83" height="83"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="pyg-EZ-P3m" secondAttribute="height" multiplier="1:1" id="wOG-aB-JIE"/>
+                        </constraints>
+                        <connections>
+                            <action selector="handleHomeButtonEvent:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="kF1-b7-SLz"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TqC-TC-vCc">
+                        <rect key="frame" x="83" y="0.0" width="1" height="83"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="X8U-ag-j9Y"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BU5-QD-C4x">
+                        <rect key="frame" x="84" y="0.0" width="83" height="83"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="BU5-QD-C4x" secondAttribute="height" multiplier="1:1" id="l3e-Ag-bHy"/>
+                        </constraints>
+                        <connections>
+                            <action selector="handlePlayAndPauseButtonEvent:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Hd4-s4-6zi"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LbJ-hx-sBY">
+                        <rect key="frame" x="167" y="0.0" width="1" height="83"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="fTP-Wb-Eec"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GTP-aV-doe">
+                        <rect key="frame" x="168" y="0.0" width="83" height="83"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="GTP-aV-doe" secondAttribute="height" multiplier="1:1" id="xnk-Xw-vas"/>
+                        </constraints>
+                        <connections>
+                            <action selector="handleStopButtonEvent:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="dJC-Pb-vtO"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MIY-Ma-M8M">
+                        <rect key="frame" x="251" y="0.0" width="1" height="83"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="1hN-5D-HmS"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIv-iV-y4U">
+                        <rect key="frame" x="252" y="0.0" width="83.5" height="83.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="HIv-iV-y4U" secondAttribute="height" multiplier="1:1" id="DaO-2b-5X1"/>
+                        </constraints>
+                        <connections>
+                            <action selector="handleFullScreenButtonEvent:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="tQD-Gh-4s7"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qP4-fQ-8XX">
+                        <rect key="frame" x="335.5" y="0.0" width="1" height="83.5"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="rj5-Yb-dWb"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="LbJ-hx-sBY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="3EM-lv-aGp"/>
+                    <constraint firstItem="HIv-iV-y4U" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="7VU-PX-jDq"/>
+                    <constraint firstItem="LbJ-hx-sBY" firstAttribute="leading" secondItem="BU5-QD-C4x" secondAttribute="trailing" id="C3B-39-K9a"/>
+                    <constraint firstItem="BU5-QD-C4x" firstAttribute="leading" secondItem="TqC-TC-vCc" secondAttribute="trailing" id="D9U-1H-J1i"/>
+                    <constraint firstItem="pyg-EZ-P3m" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="JhT-zx-33A"/>
+                    <constraint firstItem="TqC-TC-vCc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="RIZ-cr-6i8"/>
+                    <constraint firstAttribute="bottom" secondItem="HIv-iV-y4U" secondAttribute="bottom" id="RuF-oG-Wjo"/>
+                    <constraint firstItem="GTP-aV-doe" firstAttribute="leading" secondItem="LbJ-hx-sBY" secondAttribute="trailing" id="S9n-de-KAl"/>
+                    <constraint firstAttribute="bottom" secondItem="qP4-fQ-8XX" secondAttribute="bottom" id="TFw-JS-gGh"/>
+                    <constraint firstItem="pyg-EZ-P3m" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="W5I-A1-419"/>
+                    <constraint firstAttribute="bottom" secondItem="MIY-Ma-M8M" secondAttribute="bottom" id="W6V-Cb-8kJ"/>
+                    <constraint firstItem="MIY-Ma-M8M" firstAttribute="leading" secondItem="GTP-aV-doe" secondAttribute="trailing" id="Z55-PE-L5R"/>
+                    <constraint firstAttribute="bottom" secondItem="GTP-aV-doe" secondAttribute="bottom" id="eBl-ga-Eij"/>
+                    <constraint firstAttribute="bottom" secondItem="BU5-QD-C4x" secondAttribute="bottom" id="g7N-fG-6jP"/>
+                    <constraint firstAttribute="bottom" secondItem="pyg-EZ-P3m" secondAttribute="bottom" id="hIG-ep-sKP"/>
+                    <constraint firstItem="TqC-TC-vCc" firstAttribute="leading" secondItem="pyg-EZ-P3m" secondAttribute="trailing" id="hl4-UG-Wds"/>
+                    <constraint firstAttribute="bottom" secondItem="TqC-TC-vCc" secondAttribute="bottom" id="k5Y-zK-mg2"/>
+                    <constraint firstItem="qP4-fQ-8XX" firstAttribute="leading" secondItem="HIv-iV-y4U" secondAttribute="trailing" id="kCP-Gz-SQD"/>
+                    <constraint firstAttribute="bottom" secondItem="LbJ-hx-sBY" secondAttribute="bottom" id="mAd-Cf-RoM"/>
+                    <constraint firstItem="GTP-aV-doe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="o6R-m7-eeU"/>
+                    <constraint firstItem="qP4-fQ-8XX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="sAr-cG-J1l"/>
+                    <constraint firstItem="BU5-QD-C4x" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="tE7-1L-kmc"/>
+                    <constraint firstItem="MIY-Ma-M8M" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="xds-kl-uu3"/>
+                    <constraint firstItem="HIv-iV-y4U" firstAttribute="leading" secondItem="MIY-Ma-M8M" secondAttribute="trailing" id="zWf-wI-be9"/>
+                </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="fullScreenButton" destination="HIv-iV-y4U" id="xkk-2b-N5f"/>
+                <outlet property="home" destination="pyg-EZ-P3m" id="pBf-SC-BJf"/>
+                <outlet property="playAndPauseButton" destination="BU5-QD-C4x" id="TD4-ER-0p9"/>
+                <outlet property="stopButton" destination="GTP-aV-doe" id="8td-vq-ayj"/>
+            </connections>
+            <point key="canvasLocation" x="248.5" y="286"/>
         </tableViewCell>
     </objects>
 </document>

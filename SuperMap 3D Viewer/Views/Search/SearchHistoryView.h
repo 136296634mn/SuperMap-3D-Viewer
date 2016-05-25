@@ -10,4 +10,13 @@
 
 @interface SearchHistoryView : UIView
 
+//  获取搜索历史数据源
+- (void)fetchHistoryDataSource;
+
+//  刷新表格
+- (void)refreshMenu;
+
+//  清除搜索结果数据源
+- (void)clearDataSource;
+
 @end

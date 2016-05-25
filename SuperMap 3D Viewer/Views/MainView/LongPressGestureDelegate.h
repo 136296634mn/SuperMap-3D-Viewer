@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface LongPressGestureDelegate : NSObject
+@interface LongPressGestureDelegate : NSObject <UIGestureRecognizerDelegate>
 
 @end

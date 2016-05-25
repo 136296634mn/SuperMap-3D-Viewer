@@ -7,7 +7,27 @@
 //
 
 #import "IntroductionViewController.h"
+#import "Helper.h"
+#import "NavigationItem.h"
+
+@interface IntroductionViewController ()
+
+@property (weak, nonatomic) IBOutlet NavigationItem *navigationItem;
+
+@end
 
 @implementation IntroductionViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    self.view.backgroundColor = GetColor(241, 241, 241, 1.0);
+    
+    //  设置导航条属性
+    [self.navigationItem setTitle:_currentTitle];
+    [self.navigationItem setPopToPreviousViewController:^{
+        [self.navigationController popViewControllerAnimated:YES];
+    }];
+}
 
 @end

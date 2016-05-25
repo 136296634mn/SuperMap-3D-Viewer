@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class Scene;
 @interface LayerViewController : UIViewController
+
+@property (copy, nonatomic) NSString *currentTitle;
+@property (strong, nonatomic) Scene *currentScene;
 
 @end

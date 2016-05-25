@@ -10,4 +10,6 @@
 
 @interface FavoritesCell : UITableViewCell
 
+- (void)refreshCell;
+
 @end

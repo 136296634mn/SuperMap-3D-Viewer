@@ -1,18 +1,74 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="DistanceCell">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="109" id="qsA-73-O5d" customClass="DistanceCell">
+            <rect key="frame" x="0.0" y="0.0" width="520" height="109"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qsA-73-O5d" id="biY-n0-YFn">
+                <rect key="frame" x="0.0" y="0.0" width="520" height="108.5"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BKS-Bn-ZM2">
+                        <rect key="frame" x="108" y="0.0" width="1" height="108"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="Tyd-8H-0Y1"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sfe-nK-rtq">
+                        <rect key="frame" x="217" y="0.0" width="1" height="108"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="SZh-lQ-xAi"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XOG-nY-HgL">
+                        <rect key="frame" x="109" y="0.0" width="108" height="108"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="XOG-nY-HgL" secondAttribute="height" multiplier="1:1" id="pLM-i9-Qoh"/>
+                        </constraints>
+                        <connections>
+                            <action selector="handleClearButtonEvent:" destination="qsA-73-O5d" eventType="touchUpInside" id="GXb-MW-fxc"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5XQ-84-tIR">
+                        <rect key="frame" x="0.0" y="0.0" width="108" height="108"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="5XQ-84-tIR" secondAttribute="height" multiplier="1:1" id="jEj-xd-xBi"/>
+                        </constraints>
+                        <connections>
+                            <action selector="handleHomeButtonEvent:" destination="qsA-73-O5d" eventType="touchUpInside" id="Zto-E6-t4X"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="XOG-nY-HgL" firstAttribute="leading" secondItem="BKS-Bn-ZM2" secondAttribute="trailing" id="2X8-Zh-yRD"/>
+                    <constraint firstItem="sfe-nK-rtq" firstAttribute="leading" secondItem="XOG-nY-HgL" secondAttribute="trailing" id="8a2-UM-3QH"/>
+                    <constraint firstItem="5XQ-84-tIR" firstAttribute="leading" secondItem="biY-n0-YFn" secondAttribute="leading" id="AIR-ky-ZIA"/>
+                    <constraint firstItem="BKS-Bn-ZM2" firstAttribute="leading" secondItem="5XQ-84-tIR" secondAttribute="trailing" id="L4w-pT-h5W"/>
+                    <constraint firstItem="XOG-nY-HgL" firstAttribute="top" secondItem="biY-n0-YFn" secondAttribute="top" id="Mcm-EO-9CM"/>
+                    <constraint firstItem="BKS-Bn-ZM2" firstAttribute="top" secondItem="biY-n0-YFn" secondAttribute="top" id="N1O-Tr-tQV"/>
+                    <constraint firstAttribute="bottom" secondItem="5XQ-84-tIR" secondAttribute="bottom" id="OlC-eS-rXk"/>
+                    <constraint firstAttribute="bottom" secondItem="XOG-nY-HgL" secondAttribute="bottom" id="aV7-GO-p61"/>
+                    <constraint firstItem="sfe-nK-rtq" firstAttribute="top" secondItem="biY-n0-YFn" secondAttribute="top" id="dvM-ki-KZk"/>
+                    <constraint firstAttribute="bottom" secondItem="sfe-nK-rtq" secondAttribute="bottom" id="eLk-ae-ij9"/>
+                    <constraint firstAttribute="bottom" secondItem="BKS-Bn-ZM2" secondAttribute="bottom" id="gpO-FT-1DQ"/>
+                    <constraint firstItem="5XQ-84-tIR" firstAttribute="top" secondItem="biY-n0-YFn" secondAttribute="top" id="xu0-Y4-Zla"/>
+                </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="clearButton" destination="XOG-nY-HgL" id="qsX-hH-Q9u"/>
+                <outlet property="home" destination="5XQ-84-tIR" id="lhF-Hm-Zev"/>
+            </connections>
+            <point key="canvasLocation" x="358" y="313.5"/>
         </tableViewCell>
     </objects>
 </document>

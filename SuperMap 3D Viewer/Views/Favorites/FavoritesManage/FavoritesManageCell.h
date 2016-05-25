@@ -6,8 +6,11 @@
 //  Copyright © 2016年 zyd. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "MGSwipeTableCell.h"
 
-@interface FavoritesManageCell : UITableViewCell
+@class FavoritesSettingModel;
+@interface FavoritesManageCell : MGSwipeTableCell
+
+- (void)refreshCell:(FavoritesSettingModel *)model;
 
 @end

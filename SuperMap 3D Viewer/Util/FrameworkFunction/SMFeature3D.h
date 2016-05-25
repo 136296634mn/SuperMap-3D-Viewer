@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+@class Feature3D;
 @interface SMFeature3D : NSObject
+
+@property (strong, nonatomic) Feature3D *feature3D;
+@property (assign, nonatomic) BOOL favorable;
 
 @end

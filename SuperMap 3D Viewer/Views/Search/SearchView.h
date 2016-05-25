@@ -10,4 +10,10 @@
 
 @interface SearchView : UIView
 
+@property (assign, readonly, nonatomic) BOOL isEditing;
+@property (assign, nonatomic) BOOL shouldBeginEditing;
+
+//  清除搜索菜单数据
+- (void)clearData;
+
 @end

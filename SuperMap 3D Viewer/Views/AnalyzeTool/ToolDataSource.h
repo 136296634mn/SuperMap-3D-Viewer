@@ -7,7 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface ToolDataSource : NSObject
+@interface ToolDataSource : NSObject <UITableViewDataSource>
+
+@property (copy, nonatomic) NSString *identifier;
+
+- (instancetype)initWithCellIdentifier:(NSString *)identifier;
+- (instancetype)dataSourceWithCellIdentifier:(NSString *)identifier;
 
 @end

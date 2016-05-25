@@ -10,8 +10,10 @@
 
 @interface ZYDAttributeMenu : UIWindow
 
-+ (ZYDAttributeMenu *)sharedInstance;
+@property (copy, nonatomic) NSString *text;
+@property (copy, nonatomic) void (^callBackBlock)(NSString *text);
 
++ (ZYDAttributeMenu *)sharedInstance;
 - (void)showWithTitle:(NSString *)title;
 
 @end

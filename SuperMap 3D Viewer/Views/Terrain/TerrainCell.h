@@ -10,4 +10,6 @@
 
 @interface TerrainCell : UICollectionViewCell
 
+- (void)refreshCell:(id)data;
+
 @end

@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+@class FavoritesSettingModel;
 @interface FavoritesSettingCell : UITableViewCell
+
+- (void)refreshCellWithModel:(FavoritesSettingModel *)model indexPath:(NSIndexPath *)indexPath;
 
 @end

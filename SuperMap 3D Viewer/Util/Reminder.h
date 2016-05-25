@@ -7,7 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface Reminder : NSObject
+
+//  许可过期提醒
++ (void)licenseReminder;
+
+//  提示网络连接
++ (BOOL)networkReachable;
+
+//  提示网络是否为WIFI
++ (BOOL)networkReachableWiFi;
 
 @end

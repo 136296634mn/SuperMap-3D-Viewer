@@ -10,4 +10,8 @@
 
 @interface HttpSession : NSObject
 
++ (nullable NSURLSessionDataTask *)GET:(NSString *)URLString
+                               success:(nullable void (^)(NSURLSessionDataTask *task, id _Nullable responseObject))success
+                               failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error))failure;
+
 @end

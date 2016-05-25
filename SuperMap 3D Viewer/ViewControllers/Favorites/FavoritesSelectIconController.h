@@ -10,4 +10,8 @@
 
 @interface FavoritesSelectIconController : UIViewController
 
+@property (copy, nonatomic) NSString *currentTitle;
+@property (copy, nonatomic) NSString *iconName;
+@property (copy, nonatomic) void (^resetIconName)(NSString *iconName);
+
 @end

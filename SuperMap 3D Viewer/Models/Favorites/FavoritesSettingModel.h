@@ -10,4 +10,12 @@
 
 @interface FavoritesSettingModel : NSObject
 
+@property (copy, nonatomic) NSString *name;
+@property (copy, nonatomic) NSString *iconName;
+@property (copy, nonatomic) NSString *message;
+@property (assign, nonatomic) BOOL visible;
+
+- (instancetype)initWithDic:(NSDictionary *)dic;
++ (FavoritesSettingModel *)modelWithDic:(NSDictionary *)dic;
+
 @end

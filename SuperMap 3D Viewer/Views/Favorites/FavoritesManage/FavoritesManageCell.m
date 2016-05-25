@@ -7,6 +7,7 @@
 //
 
 #import "FavoritesManageCell.h"
+#import "FavoritesSettingModel.h"
 
 @implementation FavoritesManageCell
 
@@ -14,10 +15,16 @@
     // Initialization code
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    if (!self) return nil;
+    
+    return self;
+}
 
-    // Configure the view for the selected state
+- (void)refreshCell:(FavoritesSettingModel *)model {
+    self.textLabel.text = model.name;
+    self.detailTextLabel.text = model.message;
 }
 
 @end

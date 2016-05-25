@@ -34,7 +34,7 @@
     _backButton = button;
     
     UIView *separatorLine = [[UIView alloc] init];
-    separatorLine.backgroundColor = Color(82, 82, 84, 1.0);
+    separatorLine.backgroundColor = GetColor(82, 82, 84, 1.0);
     [self addSubview:separatorLine];
     _separatorLine = separatorLine;
     

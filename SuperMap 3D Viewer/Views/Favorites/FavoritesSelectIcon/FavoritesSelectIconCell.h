@@ -10,4 +10,6 @@
 
 @interface FavoritesSelectIconCell : UITableViewCell
 
+- (void)refreshCellWithIconName:(NSString *)name indexPath:(NSIndexPath *)indexPath;
+
 @end

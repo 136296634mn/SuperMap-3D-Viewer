@@ -10,8 +10,15 @@
 #import "AnalyzeHeader.h"
 #import "Helper.h"
 #import "HomeMenuTableViewCell.h"
+#import "Bridge.h"
 
 #define ANALYZEMENU_CELL_HEIGHT 60 //分析菜单cell高度
+
+typedef NS_ENUM(NSUInteger, AnalyzeFunctionType) {
+    AnalyzeFunctionTypeDistance = 0,
+    AnalyzeFunctionTypeArea,
+    AnalyzeFunctionTypeVisibility,
+};
 
 @interface AnalyzeMenu () <UITableViewDataSource,UITableViewDelegate>
 
@@ -39,8 +46,8 @@
 
 //  初始化数据源
 - (void)initializeDataSource {
-    self.items = @[@"距离", @"面积", @"通视", @"添加大头针", @"缩放系数"];
-    self.images = @[@"places@2x.png", @"layers@2x.png", @"analyze@2x.png", @"fly@2x.png", @"download@2x.png"];
+    self.items = @[@"距离", @"面积", @"通视"];
+    self.images = @[@"distance@2x.png", @"area@2x.png", @"viewshed@2x.png"];
 }
 
 //  初始化UI控件
@@ -54,7 +61,7 @@
     UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
     tableView.dataSource = self;
     tableView.delegate = self;
-    tableView.backgroundColor = Color(24.0, 24.0, 24.0, 0.85);
+    tableView.backgroundColor = GetColor(24.0, 24.0, 24.0, 0.85);
     tableView.showsVerticalScrollIndicator = NO;
     tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     tableView.tableFooterView = [[UIView alloc] init];
@@ -248,6 +255,20 @@
                                                                     constant:30]];
 }
 
+- (void)showToolMenuWithIndexPath:(NSIndexPath *)indexPath {
+    switch (indexPath.row) {
+        case AnalyzeFunctionTypeDistance:
+            [Bridge sharedInstance].showDistanceToolMenu();
+            break;
+        case AnalyzeFunctionTypeArea:
+            [Bridge sharedInstance].showAreaToolMenu();
+            break;
+        case AnalyzeFunctionTypeVisibility:
+            [Bridge sharedInstance].showVisibilityToolMenu();
+            break;
+    }
+}
+
 #pragma mark -- UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -278,6 +299,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self showToolMenuWithIndexPath:indexPath];
 }
 
 - (void)adjustContentOffset {

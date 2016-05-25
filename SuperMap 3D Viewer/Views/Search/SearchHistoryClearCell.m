@@ -7,18 +7,32 @@
 //
 
 #import "SearchHistoryClearCell.h"
+#import "UITableViewCell+RefreshData.h"
+
+@interface SearchHistoryClearCell ()
+
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+
+@end
 
 @implementation SearchHistoryClearCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+    self.backgroundColor = [UIColor clearColor];
+    UIView *backgroundView = [[UIView alloc] init];
+    backgroundView.backgroundColor = [UIColor darkGrayColor];
+    self.selectedBackgroundView = backgroundView;
+    self.separatorInset = UIEdgeInsetsMake(0, 20, 0, 20);
+    
+    self.titleLabel.textAlignment = NSTextAlignmentCenter;
+    self.titleLabel.backgroundColor = [UIColor clearColor];
+    self.titleLabel.textColor = [UIColor whiteColor];
+    self.titleLabel.text = @"清除历史记录";
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+- (void)refreshCell:(id)data {
 }
 
 @end

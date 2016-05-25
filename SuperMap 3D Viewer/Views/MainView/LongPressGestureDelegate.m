@@ -7,7 +7,17 @@
 //
 
 #import "LongPressGestureDelegate.h"
+#import "NavigationControl.h"
 
 @implementation LongPressGestureDelegate
+
+#pragma mark -- UIGestureRecognizerDelegate
+
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
+    if ([touch.view isKindOfClass:[ZoomContrl class]]) {
+        return NO;
+    }
+    return YES;
+}
 
 @end

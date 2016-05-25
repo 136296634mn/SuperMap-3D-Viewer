@@ -8,11 +8,23 @@
 
 #import "TerrainCell.h"
 
+@interface TerrainCell ()
+
+@property (weak, nonatomic) IBOutlet UIImageView *titleImageView;
+
+@end
+
 @implementation TerrainCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+}
+
+- (void)refreshCell:(id)data {
+    if (![data isKindOfClass:[NSString class]]) return;
+    
+    self.titleImageView.image = [UIImage imageNamed:(NSString *)data];
 }
 
 @end

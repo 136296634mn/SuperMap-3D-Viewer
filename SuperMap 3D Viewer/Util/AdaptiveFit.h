@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface AdaptiveFit : NSObject
+
++ (CGFloat)sizeFromIPone6P:(CGFloat)size;
 
 @end

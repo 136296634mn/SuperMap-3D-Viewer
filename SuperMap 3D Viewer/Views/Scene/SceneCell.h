@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+@class SceneModel;
 @interface SceneCell : UITableViewCell
+
+- (void)refreshData:(SceneModel *)model;
 
 @end

@@ -10,4 +10,6 @@
 
 @interface SettingViewController : UIViewController
 
+@property (copy, nonatomic) NSString *currentTitle;
+
 @end

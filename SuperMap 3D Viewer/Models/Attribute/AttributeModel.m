@@ -10,4 +10,23 @@
 
 @implementation AttributeModel
 
+- (void)setValue:(id)value forUndefinedKey:(NSString *)key {
+}
+
+- (id)valueForUndefinedKey:(NSString *)key {
+    return nil;
+}
+
+- (instancetype)initWithDic:(NSDictionary *)dic {
+    if (self = [super init]) {
+        [self setValuesForKeysWithDictionary:dic];
+    }
+    return self;
+}
+
++ (AttributeModel *)modelWithDic:(NSDictionary *)dic {
+    AttributeModel *model = [[AttributeModel alloc] initWithDic:dic];
+    return model;
+}
+
 @end

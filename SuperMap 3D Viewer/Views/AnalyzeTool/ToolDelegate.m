@@ -10,4 +10,10 @@
 
 @implementation ToolDelegate
 
+#pragma mark -- UITableViewDelegate
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
+    return 60.0;
+}
+
 @end

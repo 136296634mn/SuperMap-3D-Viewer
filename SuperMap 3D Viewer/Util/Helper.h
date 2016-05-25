@@ -7,7 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface Helper : NSObject
+
+UIColor *GetColor(CGFloat red, CGFloat green, CGFloat blue, CGFloat alpha);
++ (UIImage *)originImage:(UIImage *)image scaleToSize:(CGSize)size;
++ (NSString *)unitConversionWithDistance:(double)distance;
++ (NSString *)unitConversionWithArea:(double)area;
 
 @end

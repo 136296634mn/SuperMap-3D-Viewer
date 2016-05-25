@@ -10,4 +10,6 @@
 
 @interface SceneOnlineView : UIView
 
+- (void)refreshData:(id)data;
+
 @end

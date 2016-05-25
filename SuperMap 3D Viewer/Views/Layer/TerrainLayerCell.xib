@@ -1,18 +1,46 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="TerrainLayerCell">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="87" id="hhl-kh-W8q" customClass="TerrainLayerCell">
+            <rect key="frame" x="0.0" y="0.0" width="520" height="87"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hhl-kh-W8q" id="5rA-Tg-OsF">
+                <rect key="frame" x="0.0" y="0.0" width="520" height="86.5"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BLb-7Q-Aw7">
+                        <rect key="frame" x="10" y="0.0" width="452" height="86"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7l4-np-nAA">
+                        <rect key="frame" x="466" y="28" width="51" height="31"/>
+                        <connections>
+                            <action selector="visibleSwitchValueChanged:" destination="hhl-kh-W8q" eventType="valueChanged" id="PQK-qZ-A0g"/>
+                        </connections>
+                    </switch>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="7l4-np-nAA" secondAttribute="trailing" constant="5" id="3Rq-7e-eSL"/>
+                    <constraint firstItem="7l4-np-nAA" firstAttribute="centerY" secondItem="5rA-Tg-OsF" secondAttribute="centerY" id="UaK-OT-lLd"/>
+                    <constraint firstAttribute="bottom" secondItem="BLb-7Q-Aw7" secondAttribute="bottom" id="Vd4-uc-Aba"/>
+                    <constraint firstItem="7l4-np-nAA" firstAttribute="leading" secondItem="BLb-7Q-Aw7" secondAttribute="trailing" constant="4" id="gYi-3T-wOL"/>
+                    <constraint firstItem="BLb-7Q-Aw7" firstAttribute="leading" secondItem="5rA-Tg-OsF" secondAttribute="leading" constant="10" id="oWU-1F-HNM"/>
+                    <constraint firstItem="BLb-7Q-Aw7" firstAttribute="top" secondItem="5rA-Tg-OsF" secondAttribute="top" id="wzm-Zm-7hz"/>
+                </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="titleLabel" destination="BLb-7Q-Aw7" id="iA0-CT-Mwt"/>
+                <outlet property="visibleSwitch" destination="7l4-np-nAA" id="myu-9N-9gz"/>
+            </connections>
+            <point key="canvasLocation" x="134" y="224.5"/>
         </tableViewCell>
     </objects>
 </document>

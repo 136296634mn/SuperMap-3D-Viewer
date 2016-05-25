@@ -10,4 +10,9 @@
 
 @interface RouteView : UIView
 
+@property (assign, readonly, nonatomic) BOOL isEditing;
+
+//  清除搜索菜单数据
+- (void)clearData;
+
 @end

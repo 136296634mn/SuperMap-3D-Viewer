@@ -10,4 +10,6 @@
 
 @interface FlyMenuCell : UITableViewCell
 
+- (void)refreshCell:(id)data;
+
 @end

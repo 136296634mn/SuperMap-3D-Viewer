@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_OPTIONS(NSUInteger, SearchType) {
+    SearchTypeNone      = 0,
+    SearchTypeRoute     = 1 << 0,
+    SearchTypeSearch    = 1 << 1,
+};
+
 @interface SearchAndRouteButton : UIView
 
+@property (assign, nonatomic) SearchType type;
+    
 @end

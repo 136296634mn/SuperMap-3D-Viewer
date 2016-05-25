@@ -8,6 +8,25 @@
 
 #import <Foundation/Foundation.h>
 
+typedef NS_ENUM(NSUInteger, HttpDownloadErrorType) {
+    
+};
+
 @interface HttpDownload : NSObject
+
+//  根据关键字下载搜索数据
++ (void)downloadSearchDataWithKeywords:(NSString *)keywords
+                               success:(void (^)(id items))success
+                               failure:(void (^)(HttpDownloadErrorType errorType))failure;
+
++ (void)downloadRouteDataWithOrigin:(NSString *)origin
+                        destination:(NSString *)destination
+                            success:(void (^)(id items))success
+                            failure:(void (^)(HttpDownloadErrorType errorType))failure;
+
+//  下载在线数据属性字段
++ (void)downloadAttributeDataWithURL:(NSString *)URLString
+                             success:(void (^)(id items))success
+                             failure:(void (^)(HttpDownloadErrorType errorType))failure;
 
 @end

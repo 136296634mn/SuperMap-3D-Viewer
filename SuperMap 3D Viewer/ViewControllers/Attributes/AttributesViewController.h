@@ -10,4 +10,6 @@
 
 @interface AttributesViewController : UIViewController
 
+- (void)refreshData:(id)data;
+
 @end

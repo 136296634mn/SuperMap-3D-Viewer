@@ -7,7 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface SceneDelegate : NSObject
+@interface SceneDelegate : NSObject <UITableViewDelegate>
+
+- (instancetype)initWithItems:(id)items;
++ (SceneDelegate *)delegateWithItems:(id)items;
+- (void)refreshData:(id)data;
 
 @end

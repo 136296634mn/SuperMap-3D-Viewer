@@ -10,4 +10,6 @@
 
 @interface FavoritesViewController : UIViewController
 
+@property (copy, nonatomic) NSString *currentTitle;
+
 @end

@@ -10,4 +10,10 @@
 
 @interface AttributeModel : NSObject
 
+@property (strong, nonatomic) id key;
+@property (strong, nonatomic) id value;
+
+- (instancetype)initWithDic:(NSDictionary *)dic;
++ (AttributeModel *)modelWithDic:(NSDictionary *)dic;
+
 @end

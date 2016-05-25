@@ -10,4 +10,6 @@
 
 @interface IntroductionViewController : UIViewController
 
+@property (copy, nonatomic) NSString *currentTitle;
+
 @end

@@ -7,7 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface SceneOnlineDataSource : NSObject
+typedef void (^TableViewCellRefreshBlock)(id cell, id item);
+
+@interface SceneOnlineDataSource : NSObject <UITableViewDataSource>
+
+- (instancetype)initWithItems:(id)items cellIdentifier:(NSString *)identifier refreshBlock:(TableViewCellRefreshBlock)block;
++ (SceneOnlineDataSource *)dataSourceWithItems:(id)items cellIdentifier:(NSString *)identifier refreshBlock:(TableViewCellRefreshBlock)block;
+- (void)refreshData:(NSArray *)data;
 
 @end

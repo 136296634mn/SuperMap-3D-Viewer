@@ -7,6 +7,7 @@
 //
 
 #import "SMFeature3D.h"
+#import <SuperMap/SuperMap.h>
 
 @implementation SMFeature3D
 

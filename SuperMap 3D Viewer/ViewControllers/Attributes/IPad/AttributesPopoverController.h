@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <SuperMap/Point3D.h>
 
 @interface AttributesPopoverController : UIPopoverController
+
+@property (assign, nonatomic) Point3D point3D;
 
 @end
